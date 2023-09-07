@@ -1,4 +1,4 @@
-﻿namespace CursoGit;
+namespace CursoGit;
 
 public class Calculator : ICalculator
 {
@@ -9,7 +9,15 @@ public class Calculator : ICalculator
 
     public double Add(double a, double y)
     {
-        throw new NotImplementedException();
+        try 
+        {
+            var p = 0; p = a + y;
+            return p;
+        }
+        catch (Exception ex)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public double Div(double x, double y)
